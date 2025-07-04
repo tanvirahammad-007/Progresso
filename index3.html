@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProGressO - Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(to bottom, #b4c7f0, #d0f2b0);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #000;
+      box-sizing: border-box;
+    }
+
+    .header-bar {
+      width: 100%;
+      background: linear-gradient(to right, #f2a4b5, #b4e0e4);
+      padding: 20px 0 20px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      position: relative;
+    }
+
+    .logo-small {
+      width: 62px;
+      height: auto;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .intro {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 25px 30px 10px;
+      line-height: 1.6;
+    }
+
+    .intro::before {
+      content: "⭐ ";
+    }
+
+    .meditation-img {
+      width: 85%;
+      max-width: 350px;
+      margin: 55px 0;
+    }
+
+    .quote {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 30px 150px;
+      line-height: 1.6;
+    }
+
+    .start-btn {
+      background-color: #000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 18px 30px;
+      border: none;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-bar">
+    <img src="logo.png" alt="ProGressO Logo" class="logo-small" />
+    <h1>Hi Hablu,<br>Welcome to ProGressO</h1>
+  </div>
+
+  <div class="intro">
+    Let’s Explore The App. Find some Peace of Mind<br />
+    To Achieve Your Goal.
+  </div>
+
+  <img src="group.png" alt="Meditation Illustration" class="meditation-img" />
+
+  <div class="quote">
+    “You don't have to be great to start, but<br>
+    you have to start to be great. – Zig Ziglar”
+  </div>
+  <a href="index4.html">
+  <button class="start-btn">Get Started</button>
+</a>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProGressO - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Fredoka', sans-serif;
+            background: linear-gradient(to bottom, #b4c7f0, #d0f2b0);
+            color: #000;
+        }
+
+        /* Header Bar */
+
+        .header {
+            background: linear-gradient(to right, #f2a4b5, #b4e0e4);
+            padding: 20px 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+    .logo {
+      height: 62px;
+      width: 62px;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: 800;
+      color: #521c1c;
+    }
+
+    .icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      stroke: black;
+    }
+
+        /* Section Heading */
+        .section-heading {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 50px 20px 50px;
+        }
+
+        /* Card Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            padding: 5px 5px;
+        }
+
+        .card {
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 100px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+        }
+
+        .card span {
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        .icon-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 25px;
+        }
+
+        .card.big {
+            grid-column: span 2;
+            height: 200px;
+        }
+
+        /* Rounded Card Corner */
+        .card,
+        .card.big {
+            border-radius: 15px;
+        }
+
+        .icon-labelbig{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 160px;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header --> 
+  <div class="header">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <div class="title">HABLU'S HQ</div>
+    <div class="icons">
+      <!-- User Icon -->
+      <svg class="icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M5.121 17.804A13.937 13.937 0 0112 15c2.136 0 4.152.5 5.879 1.389
+          M15 10a3 3 0 11-6 0 3 3 0 016 0z
+          M19.071 4.929a10 10 0 11-14.142 0 10 10 0 0114.142 0z">
+        </path>
+      </svg>
+      <!-- Menu Icon -->
+      <svg class="icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </div>
+  </div>
+    <!-- Section Title -->
+    <div class="section-heading">Your Journey Begins Here,</div>
+
+    <!-- Cards Grid -->
+     <a href="index5.html">
+    <div class="grid">
+        <div class="card" style="background-image: url('assets/missions.png');">
+            <div class="icon-label">🛰️ <span>MISSIONS</span></div>
+        </div>
+        </a>
+        <div class="card" style="background-image: url('assets/daily.png');">
+            <div class="icon-label">📆 <span>DAILY CHALLENGES</span></div>
+        </div>
+        <a href="index6.html">
+        <div class="card" style="background-image: url('assets/mood.png');">
+            <div class="icon-label">🧠 <span>MOOD TRACKER</span></div>
+        </div>
+        </a>
+        <div class="card" style="background-image: url('assets/ai.png');">
+            <div class="icon-label">🤖 <span>AI COMPANION</span></div>
+        </div>
+        <div class="card big" style="background-image: url('assets/dashboard.png');">
+            <div class="icon-labelbig">🔳 <span>DASHBOARD</span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

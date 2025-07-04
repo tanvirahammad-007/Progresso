@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #b4c7f0, #d0f2b0);
+      min-height: 100vh;
+    }
+
+
+    .header {
+      background: linear-gradient(to right, #f2a4b5, #b4e0e4);
+      padding: 20px 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    .logo {
+      height: 62px;
+      width: 62px;
+    }
+
+
+    .title {
+      font-size: 30px;
+      font-weight: 800;
+      color: #521c1c;
+    }
+
+    .icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      stroke: black;
+    }
+
+    .missions {
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+    .emoji {
+      font-size: 20px;
+    
+    }
+
+    /* Responsive behavior */
+    @media (min-width: 600px) {
+      .title {
+        font-size: 24px;
+      }
+
+      .card {
+        font-size: 18px;
+        font-weight: bold;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <div class="title">MISSIONS</div>
+    <div class="icons">
+      <!-- User Icon -->
+      <svg class="icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 15c2.136 0 4.152.5 5.879 1.389
+          M15 10a3 3 0 11-6 0 3 3 0 016 0z
+          M19.071 4.929a10 10 0 11-14.142 0 10 10 0 0114.142 0z">
+        </path>
+      </svg>
+      <!-- Menu Icon -->
+      <svg class="icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Missions -->
+<div class="missions">
+  <div class="card">✅ CGPA Rescue Squad 🧠</div>
+  <div class="card">✅ Hunt Job or Die Tryin 📄</div>
+  <div class="card">✅ Sprint Like She’s Watching 👟</div>
+  <div class="card">✅ Gym Bro 💪</div>
+  <div class="card">✅ BrainForge 🧠</div>
+  <div class="card">✅ Look Like Your Future Self 🧥</div>
+  <div class="card">✅ Chill With a Skill 🎲</div>
+</div>
+
+
+</body>
+
+</html>
